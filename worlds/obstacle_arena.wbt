@@ -1,0 +1,66 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/devices/nvidia/protos/JetsonNano.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.026566313005053764 -0.9901037245823683 0.137800020251955 5.898672725475471
+  position -3.413781031653499 0.7626604860024089 1.5984096576969622
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2.5 2.5
+}
+CardboardBox {
+  translation 0 0.64 0.05
+  rotation 0 0 1 0.523599
+  size 0.3 0.3 0.1
+}
+CardboardBox {
+  translation 0.840314 -0.84792 0.05
+  rotation 0 0 -1 -0.7854053071795866
+  name "cardboard box(1)"
+  size 0.3 0.3 0.1
+}
+CardboardBox {
+  translation 0.283746 -0.443483 0.05
+  rotation 0 0 -1 -0.7854053071795866
+  name "cardboard box(5)"
+  size 0.3 0.3 0.1
+}
+CardboardBox {
+  translation 0.679101 0.429565 0.05
+  rotation 0 0 -1 -0.7854053071795866
+  name "cardboard box(3)"
+  size 0.3 0.3 0.1
+}
+CardboardBox {
+  translation -0.507571 -0.711638 0.05
+  rotation 0 0 1 2.8798
+  name "cardboard box(2)"
+  size 0.3 0.3 0.1
+}
+CardboardBox {
+  translation -0.64169 0.256038 0.05
+  rotation 0 0 1 2.8798
+  name "cardboard box(4)"
+  size 0.3 0.3 0.1
+}
+E-puck {
+  translation -1 1 0
+  controller "<extern>"
+  supervisor TRUE
+}
+JetsonNano {
+  translation 0.604 -0.576 0
+  rotation 0 0 1 0.7854
+}

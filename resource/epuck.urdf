@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<robot name="e-puck">
+    <webots>
+        <plugin type="epuck_planning.diff_driver.DiffDriver" /> 
+    </webots>
+</robot> 
+
