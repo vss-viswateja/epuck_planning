@@ -38,7 +38,7 @@ Before running this package, ensure you have the following software installed:
 
 ## Installation
 
-1.  **Clone the repository:**
+-  **Clone the repository:**
 
     Navigate to your ROS 2 workspace's `src` directory (or wherever you manage your ROS 2 packages). Then, clone the repository using Git:
 
@@ -49,7 +49,7 @@ Before running this package, ensure you have the following software installed:
 
     Replace `<your_ros2_workspace>` with the path to your ROS 2 workspace (e.g., `~/ros2_ws`) and `<repository_url>` with the URL of this GitHub repository.
 
-2.  **Install Dependencies:**
+-  **Install Dependencies:**
 
     Navigate back to your ROS 2 workspace's root directory:
 
@@ -66,7 +66,7 @@ Before running this package, ensure you have the following software installed:
 
     This command will check for any missing dependencies and install them.
 
-3.  **Build the package:**
+-  **Build the package:**
 
     Use `colcon` to build the package:
 
@@ -76,7 +76,7 @@ Before running this package, ensure you have the following software installed:
 
     The `--symlink-install` option creates symbolic links instead of copying files, which speeds up the build process and makes it easier to modify code.
 
-4.  **Source the setup file:**
+-  **Source the setup file:**
 
     After building the package, you need to source the setup file to make the ROS 2 executables and libraries available in your current terminal session:
 
@@ -98,7 +98,7 @@ Before running this package, ensure you have the following software installed:
 
     ## Usage
 
-1.  **Launch Webots with the e-puck simulation:**
+-  **Launch Webots with the e-puck simulation:**
 
     Open a new terminal and run the following command to launch the e-puck simulation in Webots:
 
@@ -108,7 +108,7 @@ Before running this package, ensure you have the following software installed:
 
     This command will start the Webots simulator with the e-puck robot in your defined world.
 
-2.  **Run the Bug 0 algorithm node:**
+-  **Run the Bug 0 algorithm node:**
 
     Open another new terminal and run the Bug 0 algorithm node:
 
@@ -118,7 +118,7 @@ Before running this package, ensure you have the following software installed:
 
     This node will subscribe to the robot's sensor data and publish velocity commands to control the e-puck's movement based on the Bug 0 algorithm.
 
-3.  **(Optional) Visualize the robot's path and sensor data:**
+-  **(Optional) Visualize the robot's path and sensor data:**
 
     You can use `rqt` or `rviz2` to visualize the robot's path, sensor data, and other relevant information. For example, you can visualize the robot's odometry, sensor readings, and the planned path.
 
