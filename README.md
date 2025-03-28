@@ -20,8 +20,20 @@ This ROS 2 package implements the Bug 0 algorithm for the e-puck robot in the We
 
 Before running this package, ensure you have the following software installed:
 
--   **Webots Simulator:** Install Webots from the official Cyberbotics website: [https://cyberbotics.com/](https://cyberbotics.com/) It is compatible with ROS 2.
--   **ROS 2 (Galactic/Humble or later):** Follow the official ROS 2 installation instructions for your operating system. You can find the documentation here: [https://docs.ros.org/en/rolling/index.html](https://docs.ros.org/en/rolling/index.html) (Replace "rolling" with your ROS 2 distribution, e.g., "galactic", "humble")
+-   **Webots Simulator:** Install Webots from the official Cyberbotics website: [Webots](https://cyberbotics.com/) It is compatible with ROS 2.
+-   **ROS 2 (Galactic/Humble or later):** Follow the official ROS 2 installation instructions for your operating system. You can find the documentation here: [ros2 documentation](https://docs.ros.org/en/rolling/index.html) (Replace "rolling" with your ROS 2 distribution, e.g., "galactic", "humble")
+-   **webots\_ros2 :** This package provides the necessary interface between ROS 2 and Webots, enabling communication and control of robots within the simulator. You can install the e-puck specific portion of it using:
+
+    ```bash
+    sudo apt install ros-<ros2-distro>-webots-ros2
+    ```
+
+    Replace `<ros2-distro>` with your ROS 2 distribution (e.g., `galactic`, `humble`).
+-   **Colcon (ROS 2 build tool):** If you don't have it, install it:
+
+    ```bash
+    sudo apt install python3-colcon-common-extensions
+    ```
 
 
 ## Installation
@@ -32,10 +44,10 @@ Before running this package, ensure you have the following software installed:
 
     ```bash
     cd <your_ros2_workspace>/src
-    git clone <your_repository_url>
+    git clone <repository_url>
     ```
 
-    Replace `<your_ros2_workspace>` with the path to your ROS 2 workspace (e.g., `~/ros2_ws`) and `<your_repository_url>` with the URL of your GitHub repository.
+    Replace `<your_ros2_workspace>` with the path to your ROS 2 workspace (e.g., `~/ros2_ws`) and `<repository_url>` with the URL of this GitHub repository.
 
 2.  **Install Dependencies:**
 
