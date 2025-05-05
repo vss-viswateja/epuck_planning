@@ -81,7 +81,7 @@ Before running this package, ensure you have the following software installed:
     After building the package, you need to source the setup file to make the ROS 2 executables and libraries available in your current terminal session:
 
     ```bash
-    . install/setup.bash
+    source install/setup.bash
     ```
 
     If you want to permanently add the setup file to your environment, you can add the sourcing command to your `.bashrc` or `.zshrc` file:
@@ -113,7 +113,7 @@ Before running this package, ensure you have the following software installed:
     Open another new terminal and run the Bug 0 algorithm node:
 
     ```bash
-    ros2 run epuck bug_zero
+    ros2 run epuck_planning bug_zero
     ```
 
     This node will subscribe to the robot's sensor data and publish velocity commands to control the e-puck's movement based on the Bug 0 algorithm.
